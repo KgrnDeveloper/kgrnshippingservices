@@ -1,8 +1,11 @@
 import { FaPhone } from "react-icons/fa";
-import { MdOutlineKeyboardArrowRight } from "react-icons/md";
+import { MdDone, MdOutlineKeyboardArrowRight } from "react-icons/md";
 import imageShippingOne from "@/public/KGRN Shipping/KGRN Shipping Company.jpg";
 import imageShippingTwo from "@/public/KGRN Shipping/Third Party Warehousing & Logistics.jpg";
+import imageShippingThree from "@/public/KGRN Shipping/Container - Buying & Selling.jpg";
+import Earth from "@/public/KGRN Shipping/earth-animation-4.gif";
 import Image from "next/image";
+import { FocusCards } from "@/components/ui/focus-cards";
 
 export default function Home() {
   const sectionStyle = {
@@ -20,6 +23,35 @@ export default function Home() {
       "url('/KGRN Shipping/Air-Freight-Benefits.jpg') no-repeat center center fixed",
     backgroundSize: "cover",
   };
+  const sectionStyle4 = {
+    background:
+      "url('/KGRN Shipping/ocean-freight.jpg') no-repeat center center fixed",
+    backgroundSize: "cover",
+  };
+  const cards = [
+    {
+      title: "Container - Buying & Selling",
+      src: imageShippingThree,
+      list: [
+        "General Purpose containers",
+        "Open Top containers",
+        "High Cube containers",
+        "Refrigerated container",
+      ],
+    },
+    {
+      title: "Container - Buying & Selling",
+      src: imageShippingThree,
+      list: ["PTI certified", "CSC plated", "Cargo worthy", "Seaworthy"],
+    },
+    {
+      title: "Container - Buying & Selling",
+      src: imageShippingThree,
+      list: [
+        "Pre-show planning and assistance with necessary documentation including shipping instructions, availability forms, duties and tax, insurance, and other related materials.",
+      ],
+    },
+  ];
   return (
     <div>
       <section
@@ -308,48 +340,217 @@ export default function Home() {
             <div className="flex flex-col gap-2">
               <p className="flex items-center text-white font-light gap-2">
                 <span className="text-black text-2xl font-bold">
-                  <MdOutlineKeyboardArrowRight />
+                  <MdDone />
                 </span>
                 Standard & Economy service
               </p>
               <p className="flex items-center text-white font-light gap-2">
                 <span className="text-black text-2xl font-bold">
-                  <MdOutlineKeyboardArrowRight />
+                  <MdDone />
                 </span>
                 Consolidation
               </p>
               <p className="flex items-center text-white font-light gap-2">
                 <span className="text-black text-2xl font-bold">
-                  <MdOutlineKeyboardArrowRight />
+                  <MdDone />
                 </span>
                 Sea-Air Services
               </p>
               <p className="flex items-center text-white font-light gap-2">
                 <span className="text-black text-2xl font-bold">
-                  <MdOutlineKeyboardArrowRight />
+                  <MdDone />
                 </span>
                 Pallet building (ULD)
               </p>
               <p className="flex items-center text-white font-light gap-2">
                 <span className="text-black text-2xl font-bold">
-                  <MdOutlineKeyboardArrowRight />
+                  <MdDone />
                 </span>
                 Aircraft Chartering Services
               </p>
               <p className="flex items-center text-white font-light gap-2">
                 <span className="text-black text-2xl font-bold">
-                  <MdOutlineKeyboardArrowRight />
+                  <MdDone />
                 </span>
                 Dangerous goods
               </p>
               <p className="flex items-center text-white font-light gap-2">
                 <span className="text-black text-2xl font-bold">
-                  <MdOutlineKeyboardArrowRight />
+                  <MdDone />
                 </span>
                 Door-to-Door
               </p>
             </div>
           </div>
+        </div>
+      </section>
+      <section className="bg-white w-full h-auto flex flex-col justify-center items-center py-20">
+        <div className="w-[80%] flex flex-col justify-center items-center gap-4">
+          <h2 className="text-2xl lg:text-4xl font-semibold justify-center lg:justify-start text-center lg:text-start text-black">
+            Customs Clearance
+          </h2>
+          <span className="before-content flex justify-center lg:justify-start"></span>
+          <div className="flex flex-col gap-4 lg:mt-4">
+            <p className="text-black leading-relaxed text-sm font-light text-center lg:text-start">
+              KGRN takes care of the difficult job of arranging and expediting
+              your shipments through Customs. Our Brokers make certain that the
+              proper customs tax is paid and that all other legal requirements
+              are met. KGRN is well-versed in customs procedures and processes,
+              and we are electronically connected to the department. We expedite
+              all paperwork requirements to pass your shipment through customs,
+              allowing your products to remain &apos;on the move.&apos;
+            </p>
+          </div>
+        </div>
+        <div className="w-[80%] h-auto flex justify-between items-center mt-10">
+          <FocusCards cards={cards} />
+        </div>
+      </section>
+      <section
+        className="relative w-full lg:h-[33rem] flex items-center justify-center bg-gray-200"
+        style={sectionStyle4}
+      >
+        <div className="absolute top-0 left-0 w-full h-full bg-[rgba(0,0,0,0.7)]"></div>
+        <div className="container w-full h-auto lg:w-[80vw] lg:h-[70%] flex flex-col lg:flex-row z-10 px-4 my-10 lg:my-0">
+          <div className="lg:w-[50%] h-full flex flex-col justify-center gap-6 pr-0 lg:pr-8">
+            <h2 className="text-2xl lg:text-4xl font-semibold justify-center lg:justify-start text-center lg:text-start text-white">
+              Ocean Freight
+            </h2>
+            <span className="before-content flex justify-center lg:justify-start"></span>
+            <div className="flex flex-col gap-4 lg:mt-4">
+              <p className="text-white leading-relaxed text-sm font-light text-center lg:text-start">
+                KGRN has a large network of sites and significant ocean freight
+                expertise to provide you with a comprehensive range of worldwide
+                freight and transportation services. From less-than-container
+                loads to full container loads, unique equipment, and large
+                goods, we can handle virtually any size of transport. You can
+                manage your maritime freight services globally from a single
+                place.
+              </p>
+              <p className="text-white leading-relaxed text-sm font-light text-center lg:text-start">
+                KGRN provides complete Sea freight solutions tailored to our
+                customer needs. We offer both sea export and sea import
+                services.
+              </p>
+            </div>
+          </div>
+          <div className="flex flex-col items-center justify-center flex-1 mt-14 lg:mt-0 py-8 lg:py-8 gap-4 bg-[#ff6223] px-8">
+            <h2 className="text-xl lg:text-2xl font-semibold justify-center lg:justify-start text-center lg:text-start text-white">
+              Our services
+            </h2>
+            <span className="before-contentB flex justify-center lg:justify-start"></span>
+            <div className="flex flex-col gap-2">
+              <p className="flex items-center text-white font-light gap-2">
+                <span className="text-black text-2xl font-bold">
+                  <MdDone />
+                </span>
+                FCL-Full Container Load
+              </p>
+              <p className="flex items-center text-white font-light gap-2">
+                <span className="text-black text-2xl font-bold">
+                  <MdDone />
+                </span>
+                LCL-Less than Container Load
+              </p>
+              <p className="flex items-center text-white font-light gap-2">
+                <span className="text-black text-2xl font-bold">
+                  <MdDone />
+                </span>
+                Sea freight Door-to-Door
+              </p>
+              <p className="flex items-center text-white font-light gap-2">
+                <span className="text-black text-2xl font-bold">
+                  <MdDone />
+                </span>
+                Sea freight Port-to-Port
+              </p>
+              <p className="flex items-center text-white font-light gap-2">
+                <span className="text-black text-2xl font-bold">
+                  <MdDone />
+                </span>
+                Documentation services
+              </p>
+              <p className="flex items-center text-white font-light gap-2">
+                <span className="text-black text-2xl font-bold">
+                  <MdDone />
+                </span>
+                Breakbulk services
+              </p>
+              <p className="flex items-center text-white font-light gap-2">
+                <span className="text-black text-2xl font-bold">
+                  <MdDone />
+                </span>
+                Consolidation
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section className="bg-white w-full h-auto flex flex-col lg:flex-row items-center my-8 px-5 md:px-14 lg:px-40 animate-fade-In">
+        <div className="lg:w-[70%] h-full flex flex-col justify-center gap-8 pr-0 lg:pr-8">
+          <h2 className="text-lg lg:text-2xl font-semibold justify-center lg:justify-start text-center lg:text-start">
+            Direct Pick-up of your exhibition shipment from any location in the
+            world
+          </h2>
+          <span className="before-content flex justify-center lg:justify-start"></span>
+          <div className="flex flex-col gap-4 font-light">
+            <p className="flex items-center gap-2">
+              <span className="text-[#f25f23] text-2xl font-bold">
+                <MdOutlineKeyboardArrowRight />
+              </span>
+              Shipping services via Air & Sea freight, schedule International
+              transport management.
+            </p>
+            <p className="flex items-center gap-2">
+              <span className="text-[#f25f23] text-2xl font-bold">
+                <MdOutlineKeyboardArrowRight />
+              </span>
+              Quick and hassle free customs clearance.
+            </p>
+            <p className="flex items-center gap-2">
+              <span className="text-[#f25f23] text-2xl font-bold">
+                <MdOutlineKeyboardArrowRight />
+              </span>
+              Arrange direct delivery to your exhibition booth with Speed - On
+              schedule Safety.
+            </p>
+            <p className="flex items-center gap-2">
+              <span className="text-[#f25f23] text-2xl font-bold">
+                <MdOutlineKeyboardArrowRight />
+              </span>
+              Well experienced Project Team for Project forwarding, heavy-lift,
+              chartering, etc.
+            </p>
+            <p className="flex items-center gap-2">
+              <span className="text-[#f25f23] text-2xl font-bold">
+                <MdOutlineKeyboardArrowRight />
+              </span>
+              Storage of empty rates and packaging materials during the fair.
+            </p>
+            <p className="flex items-center gap-2">
+              <span className="text-[#f25f23] text-2xl font-bold">
+                <MdOutlineKeyboardArrowRight />
+              </span>
+              Return transportation to your facility, another trade fair, or
+              destination of your choice with Door-to-Door services.
+            </p>
+            <p className="flex items-center gap-2">
+              <span className="text-[#f25f23] text-2xl font-bold">
+                <MdOutlineKeyboardArrowRight />
+              </span>
+              On-ste operation, assistance and supervision on installation &
+              dismantling of exhibits.
+            </p>
+          </div>
+        </div>
+        <div className="flex flex-col items-center justify-center flex-1 py-8 lg:py-8 h-[36rem] gap-4 bg-white px-8">
+          <Image src={Earth} width={300} height={300} alt="Earth" />
+          <button className="bg-[#fe5a19] text-white hover:bg-black px-6 py-4 mt-8 rounded-sm font-medium flex items-center transition-all duration-300">
+            Call +971 4557 0204{" "}
+            <span className="text-2xl">
+              <MdOutlineKeyboardArrowRight />
+            </span>
+          </button>
         </div>
       </section>
     </div>
