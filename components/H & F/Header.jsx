@@ -63,21 +63,21 @@ const Header = () => {
               Home
             </Link>
             <Link
-              href={"/"}
+              href={"/about"}
               className="text-lg"
               onClick={() => setOpenMenu(false)}
             >
               About
             </Link>
             <Link
-              href={"/about"}
+              href={"/services"}
               className="text-lg"
               onClick={() => setOpenMenu(false)}
             >
               Services
             </Link>
             <Link
-              href={"/services"}
+              href={"/"}
               className="text-lg"
               onClick={() => setOpenMenu(false)}
             >
