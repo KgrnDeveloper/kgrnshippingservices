@@ -19,10 +19,10 @@ const Header = () => {
           <Link href={"/"} className="text-[15px] hover:text-[#fe5a19]">
             Home
           </Link>
-          <Link href={"/"} className="text-[15px] hover:text-[#fe5a19]">
+          <Link href={"/about"} className="text-[15px] hover:text-[#fe5a19]">
             About
           </Link>
-          <Link href={"/"} className="text-[15px] hover:text-[#fe5a19]">
+          <Link href={"/services"} className="text-[15px] hover:text-[#fe5a19]">
             Services
           </Link>
           <Link href={"/"} className="text-[15px] hover:text-[#fe5a19]">
@@ -70,14 +70,14 @@ const Header = () => {
               About
             </Link>
             <Link
-              href={"/"}
+              href={"/about"}
               className="text-lg"
               onClick={() => setOpenMenu(false)}
             >
               Services
             </Link>
             <Link
-              href={"/"}
+              href={"/services"}
               className="text-lg"
               onClick={() => setOpenMenu(false)}
             >

@@ -313,7 +313,7 @@ export default function Home() {
         style={sectionStyle3}
       >
         <div className="absolute top-0 left-0 w-full h-full bg-[rgba(0,0,0,0.7)]"></div>
-        <div className="container w-full h-auto lg:w-[80vw] lg:h-[70%] flex flex-col lg:flex-row z-10 px-4 my-10 lg:my-0">
+        <div className="container w-full h-auto lg:w-[80vw] lg:h-[70%] flex flex-col lg:flex-row z-10 px-4 my-10 lg:my-0 animate-fade-In">
           <div className="lg:w-[50%] h-full flex flex-col justify-center gap-6 pr-0 lg:pr-8">
             <h2 className="text-2xl lg:text-4xl font-semibold justify-center lg:justify-start text-center lg:text-start text-white">
               Air Freight
@@ -384,7 +384,7 @@ export default function Home() {
           </div>
         </div>
       </section>
-      <section className="bg-white w-full h-auto flex flex-col justify-center items-center py-20">
+      <section className="bg-white w-full h-auto flex flex-col justify-center items-center py-20 animate-fade-In">
         <div className="w-[80%] flex flex-col justify-center items-center gap-4">
           <h2 className="text-2xl lg:text-4xl font-semibold justify-center lg:justify-start text-center lg:text-start text-black">
             Customs Clearance
@@ -411,7 +411,7 @@ export default function Home() {
         style={sectionStyle4}
       >
         <div className="absolute top-0 left-0 w-full h-full bg-[rgba(0,0,0,0.7)]"></div>
-        <div className="container w-full h-auto lg:w-[80vw] lg:h-[70%] flex flex-col lg:flex-row z-10 px-4 my-10 lg:my-0">
+        <div className="container w-full h-auto lg:w-[80vw] lg:h-[70%] flex flex-col lg:flex-row z-10 px-4 my-10 lg:my-0 animate-fade-In">
           <div className="lg:w-[50%] h-full flex flex-col justify-center gap-6 pr-0 lg:pr-8">
             <h2 className="text-2xl lg:text-4xl font-semibold justify-center lg:justify-start text-center lg:text-start text-white">
               Ocean Freight
