@@ -3,7 +3,11 @@ import "./globals.css";
 import Footer from "@/components/H & F/Footer";
 
 export const metadata = {
-  title: "Home",
+  title: {
+    absolute : '',
+    default : "KGRN Shipping Services",
+    template : "%s - KGRN"
+  },
   description: "KGRN Shipping",
 };
 

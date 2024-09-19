@@ -8,6 +8,10 @@ import {
   MdPhotoSizeSelectSmall,
 } from "react-icons/md";
 
+export const metadata = {
+  title : "Services"
+}
+
 const Services = () => {
   const sectionStyle = {
     background:

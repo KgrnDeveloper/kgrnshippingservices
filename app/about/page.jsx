@@ -8,6 +8,10 @@ import Building from "@/public/KGRN Shipping/building.jpg";
 import Link from "next/link";
 import { MdOutlineKeyboardArrowRight } from "react-icons/md";
 
+export const metadata = {
+  title : "About Us"
+}
+
 const About = () => {
   const sectionStyle = {
     background:
