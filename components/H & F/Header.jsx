@@ -25,7 +25,7 @@ const Header = () => {
           <Link href={"/services"} className="text-[15px] hover:text-[#fe5a19]">
             Services
           </Link>
-          <Link href={"/"} className="text-[15px] hover:text-[#fe5a19]">
+          <Link href={"/projects"} className="text-[15px] hover:text-[#fe5a19]">
             Projects
           </Link>
           <Link href={"/"} className="text-[15px] hover:text-[#fe5a19]">
@@ -77,7 +77,7 @@ const Header = () => {
               Services
             </Link>
             <Link
-              href={"/"}
+              href={"/projects"}
               className="text-lg"
               onClick={() => setOpenMenu(false)}
             >
