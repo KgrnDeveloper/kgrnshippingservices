@@ -3,6 +3,7 @@ import "./globals.css";
 import Footer from "@/components/H & F/Footer";
 
 export const metadata = {
+  
   title: {
     absolute: "",
     default: "KGRN Shipping Services",
@@ -15,6 +16,7 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <head>
+      <link rel="icon" href="/KGRN Shipping/favicon.jpeg" />
         <script
           async
           src="https://www.googletagmanager.com/gtag/js?id=G-4S69S1F8JC"

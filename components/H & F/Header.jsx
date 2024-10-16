@@ -7,9 +7,11 @@ import { FaXTwitter } from "react-icons/fa6";
 import { IoMenu } from "react-icons/io5";
 import { IoMdClose } from "react-icons/io";
 import { useState } from "react";
+import ServiceNavigation from "@/components/ServicesNavigation.jsx";
 
 const Header = () => {
   const [openMenu, setOpenMenu] = useState(false);
+  const [serviceList, setServiceList] = useState(false);
 
   return (
     <header className="w-full absolute top-0 z-20 bg-transparent h-28 flex items-center justify-between px-5 md:px-14 lg:px-40">
@@ -22,9 +24,9 @@ const Header = () => {
           <Link href={"/about"} className="text-[15px] hover:text-[#fe5a19]">
             About
           </Link>
-          <Link href={"/services"} className="text-[15px] hover:text-[#fe5a19]">
-            Services
-          </Link>
+
+          <ServiceNavigation />
+
           <Link href={"/projects"} className="text-[15px] hover:text-[#fe5a19]">
             Projects
           </Link>
@@ -91,15 +93,15 @@ const Header = () => {
               Contact Us
             </Link>
             <div className="flex items-center justify-center gap-4">
-            <a href={"/"} className="text-lg">
-              <FaFacebookSquare />
-            </a>
-            <a href={"/"} className="text-lg">
-              <FaXTwitter />
-            </a>
-            <a href={"/"} className="text-lg">
-              <FaInstagram />
-            </a>
+              <a href={"/"} className="text-lg">
+                <FaFacebookSquare />
+              </a>
+              <a href={"/"} className="text-lg">
+                <FaXTwitter />
+              </a>
+              <a href={"/"} className="text-lg">
+                <FaInstagram />
+              </a>
             </div>
           </div>
         </div>
